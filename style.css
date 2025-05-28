@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins','Segoe UI',sans-serif;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url("Assets/Images/bg.jpg");
+    background-position: center center;
+    background-size: max(1200px,100vw);
+    background-repeat: no-repeat;
+    height: 70vh;
+    position: relative;
+}
+.main .box{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.44;
+    position: absolute;
+    top: 0;
+}
+nav{
+    display: flex;
+    max-width: 70vw;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    padding: 20px;
+}
+nav img{
+    width: 146px;
+    position: relative;
+    z-index: 10;
+}
+nav button{
+    position: relative;
+    z-index: 10;
+}
+.Hero{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 25px;
+}
+.Hero span:first-child{
+    font-size: 35px;
+    font-weight: 900;
+    text-align:center;
+}
+.Hero> :nth-child(2){
+    font-size: 18px;
+    text-align:center;
+}
+.Hero> :nth-child(3){
+    text-align:center;
+}
+.separation{
+    height: 5px;
+    background-color: grey;
+    opacity: 0.44;
+}
+.btn{
+    padding: 3px 8px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.719);
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+main button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+.btn-red{
+    background-color: red;
+    color: white;
+    padding: 7px 25px;
+    font-size: 17px;
+    border: none;
+    border-radius: 3px;
+}
+.main input{
+    padding: 9.5px 116px 9.5px 9px;
+    color: white;
+    font-size: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.719);
+    border-radius: 3px;
+    background-color: rgba(23, 23, 23, 0.7);
+    font-weight: 700;
+}
+.btn-red-sm{
+    border: none;
+    background-color: red;
+    color: white;
+}
+.hero-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.first{
+    color: white;
+    display: flex;
+    max-width: 70vw;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.secImg{
+    position: relative;
+}
+.secImg img{
+    width: 30vw;
+}
+.secImg video{
+    position: absolute;
+    width: 22.5vw;
+    top: 66px;
+    right: 55px;
+    z-index: -1;
+}
+.first > div{
+    display: flex;
+    flex-direction: column;
+}
+.first > div span:first-child{
+    font-size: 35px;
+    font-weight: bolder;
+}
+.first > div span:nth-child(2){
+    font-size: 17px;
+}
+.watchEverywhere video{
+    width: 19vw;
+    right: 92px;
+    top: 41px;
+}
+.faq{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.faq h2{
+    color: white;
+    margin: 1%;
+    font-size: 35px;
+}
+.faqbox{
+    color: white;
+    font-size: larger;
+    background-color: rgba(128, 128, 128, 0.615);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60vw;
+    margin: auto;
+    height: 60px;
+    margin-top: 0.3%;
+    margin-bottom: 0.3%;
+    padding: 0 1% 0 1%;
+    cursor: pointer;
+}
+.faqbox:hover{
+    background-color: gray;
+}
+.faqbox svg{
+    filter: invert(1);
+}
+.last{
+    margin: 4% 0 5% 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.last>div{
+    color: white;
+    text-align: center;
+    font-size:large;
+}
+.last input{
+    padding: 9.5px 116px 9.5px 9px;
+    color: white;
+    font-size: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.719);
+    border-radius: 3px;
+    background-color: rgba(23, 23, 23, 0.7);
+    font-weight: 700;
+}
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    margin: auto;
+    color: white;
+    font-size: 14px;
+    padding: 74px 0 74px 0;
+}
+.footer-section>div{
+    padding-bottom: 18px;
+}
+.footer-section button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 5vw;
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    column-gap: 10px;
+}
+.footer-grid .footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+@media  screen and (max-width:530px) {
+    .secImg video{
+        top: 25px;
+        right: 17px;
+    }
+}
